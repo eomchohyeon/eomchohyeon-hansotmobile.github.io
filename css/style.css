@@ -302,7 +302,7 @@ main{
     padding: 1rem 1rem;
     max-width: 1200px;
     margin: auto;
-    transform: translateY(100px);
+    transform: translateY(120px);
   }
 
   .contents-list {
@@ -416,7 +416,7 @@ main{
   text-align: center;
   position: relative;
   z-index: 1;
-  margin-top: 150px;
+  margin-top: 100px;
 }
 .textcover h2{
   font-size: 20px;
