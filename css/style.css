@@ -322,7 +322,6 @@ main{
     grid-template-columns: repeat(2, 1fr); /* 2열 레이아웃 */
     gap: 20px;
     list-style: none;
-    transform: translateY(-100px);
   }
 
   .contents-list li {
