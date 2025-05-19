@@ -314,7 +314,7 @@ main{
     padding: 1rem 1rem;
     max-width: 1200px;
     margin: auto;
-    transform: translateY(200px);
+    transform: translateY(50px);
   }
 
   .contents-list {
