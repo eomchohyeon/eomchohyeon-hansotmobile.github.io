@@ -217,19 +217,20 @@ main{
   position: relative;
   z-index: 1; /* 영상 위에 배치 */
   width: 90%;
-  padding: 2rem;
+  top: 0;
+  padding: 1rem;
   background: rgba(255, 204, 0, 0.8);
   border-radius: 10px;
   color: #333333;
   text-align: center;
   margin: 0 auto;
   justify-content: center; /* 중앙 정렬 */
-  margin-top: 80px;
+  margin-top: 100px;
   margin-bottom: 110px;
 }
 
 .main-textcover h2 {
-  font-size: clamp(17px, 2vw, 30px);
+  font-size: clamp(15px, 2vw, 20px);
   font-weight: 600;
   line-height: 1.3;
   margin-bottom: 1rem;
@@ -244,18 +245,18 @@ main{
 }
 
 .main-textcover p {
-  font-size: clamp(10px, 1vw, 18px);
+  font-size: clamp(10px, 1vw, 11px);
   line-height: 1.6;
 }
   .main-textcover a{
     display: inline-block;
-    font-size: clamp(8px, 1vw, 18px);
+    font-size: clamp(3px, 1vw, 18px);
     margin-top: 30px;
     border: 1px solid #ffffff;
     color: #ffffff;
     transition: 0.3s;
     font-weight: bold;
-    padding: clamp(4px, 0.5vw, 10px) clamp(8px, 1vw, 16px);
+    padding: clamp(3px, 0.5vw, 10px) clamp(8px, 1vw, 16px);
   }
   /* effect */
   .main-textcover a:hover{
@@ -311,7 +312,7 @@ main{
 
 
   section#contents {
-    padding: 2rem 1rem;
+    padding: 1rem 1rem;
     max-width: 1200px;
     margin: auto;
   }
@@ -357,7 +358,7 @@ main{
   }
 
   .list-textcover h3 {
-    font-size: clamp(0.7rem, 1.5vw, 1.3rem);
+    font-size: clamp(0.6rem, 1.5vw, 1.3rem);
     font-weight: 600;
     line-height: 1.5;
     color: #333;
@@ -394,7 +395,7 @@ main{
 
   .bar {
     display: block;
-    height: 3px;
+    height: 2px;
     margin-top: 1rem;
     background: #ccc;
     position: relative;
@@ -427,20 +428,20 @@ main{
   z-index: 1;
 }
 .textcover h2{
-  font-size: 30px;
+  font-size: 20px;
   font-weight: bold;
   color: #ffce00;
   margin-top: 20px;
 
 }
 .textcover p{
-  font-size: 50px;
+  font-size: 30px;
   font-weight: bold;
   color: #333333;
 }
 
 .slider-container {
-  transform: translateY(-50px);
+  transform: translateY(-150px);
   position: relative;
   width: 100%;
   max-width: 1100px;
@@ -544,66 +545,76 @@ main{
     }
   }
 
+/* footer */
+footer {
+  margin: 0 auto;
+  position: relative;
+  background: #ffce00;
+  padding: 1rem 0.5rem;
+  font-size: 10px;
+  line-height: 1.4;
+  margin-top: -200px;
+}
 
+footer img {
+  display: block;
+  margin: 0.5rem auto;
+  max-width: 70px;
+  height: auto;
+}
 
+.btbar {
+  margin: 0.8rem auto;
+  width: 100%;
+  max-width: 900px;
+  height: 1px;
+  background: #ebc342;
+}
+
+.about {
+  color: #333333;
+  text-align: center;
+  font-size: 10px;
+  margin: 0.5rem auto;
+}
+.about ul {
+  list-style: none;
+  padding: 0;
+  margin: 0 auto;
+  max-width: 95%;
+}
+.about li {
+  display: inline-block;
+  margin: 2px 5px;
+  white-space: nowrap;
+}
+
+.copy {
+  text-align: center;
+  font-size: 10px;
+  margin: 0.5rem auto;
+  color: #333333;
+}
+
+/* 반응형 */
+@media (max-width: 768px) {
   footer {
-      width: 100%;
-      height: 80px;
-      margin: 0 auto;
-      background: #ffcc00;
-      position: fixed; /* 하단에 고정 */
-      bottom: 0; /* 하단에 위치 */
-      left: 0;
-      z-index: 2;
+    font-size: 9px;
+    padding: 0.8rem 0.5rem;
   }
-  
-  .btmenu {
-      display: flex;
-      justify-content: center; /* 중앙 정렬 */
-      align-items: center; /* 수직 중앙 정렬 */
-      height: 100%;
-      font-size: 12px;
-      font-weight: bold;
-      text-align: center;
-      color: #333333;
+
+  footer img {
+    max-width: 60px;
+    margin-bottom: 0.5rem;
   }
-  
-  .btmenu ul {
-      display: flex;
-      padding: 0;
-      margin: 0;
-      list-style: none;
+
+  .about li {
+    display: block;
+    margin: 2px auto;
   }
-  
-  .btmenu ul li {
-      margin: 0 40px;
-      position: relative;
+
+  .copy {
+    font-size: 9px;
+    margin-top: 0.8rem;
   }
-  
-  .btmenu img {
-      width: 30px;
-  }
-  
-  .btmenu ul li a {
-      text-decoration: none;
-      color: inherit;
-  }
-  
-  .btmenu ul li a::after {
-      content: ""; 
-      display: block;
-      height: 3px;
-      background-color: #333333;
-      width: 0;
-      transition: width 0.3s;
-      position: absolute;
-      left: 50%;
-      bottom: -5px;
-      transform: translateX(-50%);
-      bottom: -5px;
-  }
-  
-  .btmenu ul li a:hover::after {
-      width: 100%;
-  }
-  
+}
