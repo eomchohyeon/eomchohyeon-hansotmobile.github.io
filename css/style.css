@@ -297,7 +297,7 @@ main{
   overflow: hidden;
   margin-top: 10%;
   border-radius: 10px;
-    transform: translateY(-350px);
+  margin-top: -350px;
   left: 5%;
 }
 
