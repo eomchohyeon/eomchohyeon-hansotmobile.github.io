@@ -224,8 +224,8 @@ main{
   text-align: center;
   margin: 0 auto;
   justify-content: center; /* 중앙 정렬 */
-  margin-top: 100px;
   margin-bottom: 110px;
+  margin-top: -150px;
 }
 
 .main-textcover h2 {
