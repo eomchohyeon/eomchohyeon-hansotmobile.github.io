@@ -310,6 +310,7 @@ main{
     grid-template-columns: repeat(2, 1fr); /* 2열 레이아웃 */
     gap: 20px;
     list-style: none;
+    transform: translateY(-50px);
   }
 
   .contents-list li {
@@ -317,6 +318,7 @@ main{
     border-radius: 10px;
     overflow: hidden;
     transition: transform 0.3s;
+    
   }
 
   .contents-list li:hover {
@@ -414,7 +416,7 @@ main{
   text-align: center;
   position: relative;
   z-index: 1;
-  margin-top: 100px;
+  margin-top: 150px;
 }
 .textcover h2{
   font-size: 20px;
@@ -426,7 +428,7 @@ main{
 .textcover p{
   font-size: 30px;
   font-weight: bold;
-  color: #333333;
+  color: #ffffff;
 }
 
 .slider-container {
